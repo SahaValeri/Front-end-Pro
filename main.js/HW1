@@ -1,0 +1,58 @@
+alert("Вітаю");
+
+const currentYear = 2023;
+const year = prompt('Ваш рік народження', '');
+const city = prompt('Ваше місто проживання', '');
+const sport = prompt('Ваш улюблений вид спорту', '');
+const yourAge = (currentYear - year);
+
+if (year === null || year === "") {
+    alert("Шкода, що Ви не захотіли ввести свій рік народження")
+}
+else {
+    alert(yourAge)
+}
+
+if (city === null || city === "") {
+    alert("Шкода, що Ви не захотіли ввести своє місто проживання")
+}
+else {
+    switch (city) {
+        case "Київ":
+            alert("Ти проживаєш у столиці України");
+            break
+        case "Вашингтон":
+            alert("Ти проживаєш у столиці США");
+            break
+        case "Лондон":
+            alert("Ти проживаєш у столиці Великобританіі");
+            break
+        case "Оттава":
+            alert("Ти проживаєш у столиці Канади");
+            break
+        default:
+            alert("Ти проживаєш у місті " + (city));
+    }
+}
+
+if (sport === null || sport === "") {
+    alert("Шкода, що Ви не захотіли ввести свій улюбленний вид спорту")
+}
+else {
+    switch (sport) {
+        case "Бокс":
+            alert("Круто, ти хочеш стати, як Олександр Усик");
+            break
+        case "Баскетбол>":
+            alert("Круто, ти хочеш стати, як Станіслав Медведенко");
+            break
+        case "Футбол":
+            alert("Круто, ти хочеш стати, як Андрій Шевченко");
+            break
+        default:
+            alert("Круто, ти хочеш стати, найкращим у " + (sport) + "і");
+    }
+}
+
+alert(yourAge + "\n" + city + "\n" + sport);
+
